@@ -1,0 +1,14 @@
+{
+  "name": "endgoal-group",
+  "version": "1.0.0",
+  "description": "Company website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joey Figaro",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-sass": "^1.3.3"
+  }
+}
