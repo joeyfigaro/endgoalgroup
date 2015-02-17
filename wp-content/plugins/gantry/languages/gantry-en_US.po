@@ -1,0 +1,845 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gantry\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Jakub Baran <jakub@rockettheme.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"Language: en_US\n"
+
+# ------------------- ADMIN ------------------- #
+msgid "MISSING_MENU_THEME_MESSAGE"
+msgstr ""
+"In order to get your theme working properly, please go to the <strong>Admin "
+"Dashboard &rarr; Appearance &rarr; Widgets</strong> and re-save all of your "
+"<strong>Gantry Menu</strong> widget instances."
+
+msgid "JNONE"
+msgstr "None"
+
+msgid "SETTINGS"
+msgstr "Settings"
+
+msgid "THEME_SETTINGS"
+msgstr "Theme Settings"
+
+msgid "SUCCESS_MSG"
+msgstr "The new preset has been successfully saved and its ready to use.</p>"
+
+msgid "SHOW"
+msgstr "Show"
+
+msgid "ENABLED"
+msgstr "Enabled"
+
+msgid "ENABLE"
+msgstr "Enable"
+
+msgid "POSITION"
+msgstr "Position"
+
+msgid "AUTO_SIZE"
+msgstr "Auto Size"
+
+msgid "LOW"
+msgstr "low"
+
+msgid "MED"
+msgstr "med"
+
+msgid "HIGH"
+msgstr "high"
+
+msgid "DELAY"
+msgstr "Delay"
+
+msgid "TYPE"
+msgstr "Type"
+
+msgid "X_OFFSET"
+msgstr "X-Offset"
+
+msgid "Y_OFFSET"
+msgstr "Y-Offset"
+
+msgid "MIN_WIDTH"
+msgstr "Min-Width"
+
+msgid "PREVIEW"
+msgstr "Preview"
+
+msgid "OPACITY"
+msgstr "Opacity"
+
+msgid "START"
+msgstr "Start"
+
+msgid "END"
+msgstr "End"
+
+msgid "TOOLBAR"
+msgstr "Toolbar"
+
+msgid "OVERVIEW"
+msgstr "Overview"
+
+msgid "CONTENT"
+msgstr "Content"
+
+msgid "EXCERPT"
+msgstr "Excerpt"
+
+msgid "BOTH"
+msgstr "Both"
+
+msgid "STYLE"
+msgstr "Style"
+
+msgid "LINK_COLOR"
+msgstr "Link Color"
+
+msgid "LINK_COLOR_DESC"
+msgstr "Select the default link and accent color."
+
+msgid "LOGO"
+msgstr "Logo"
+
+msgid "LOGO_DESC"
+msgstr "Enable or disable as well as select the default logo style."
+
+msgid "CUSTOM"
+msgstr "Custom"
+
+msgid "LIGHT"
+msgstr "Light"
+
+msgid "DARK"
+msgstr "Dark"
+
+msgid "HEADER_STYLE"
+msgstr "Header Style"
+
+msgid "LOGO_PICKER"
+msgstr "Custom Logo"
+
+msgid "LOGO_PICKER_DESC"
+msgstr "Use the Logo picker to select your custom logo image."
+
+msgid "LOGO_STYLE"
+msgstr "Logo Style"
+
+msgid "LOGO_STYLE_DESC"
+msgstr "Pick the Logo style from the built-in style options provided."
+
+msgid "FEATURED_IMAGE_SIZE"
+msgstr "Featured Image Size"
+
+msgid "FEATURED_IMAGE_SIZE_DESC"
+msgstr "Set the size and position of the displayed Featured Image."
+
+msgid "WIDTH"
+msgstr "Width"
+
+msgid "HEIGHT"
+msgstr "Height"
+
+msgid "LEFT"
+msgstr "Left"
+
+msgid "RIGHT"
+msgstr "Right"
+
+msgid "WEBFONTS"
+msgstr "WebFonts"
+
+msgid "WEBFONTS_DESC"
+msgstr "Enable or disable third party webfonts."
+
+msgid "WEBFONTS_SOURCE"
+msgstr "Source"
+
+msgid "FONT_SETTINGS"
+msgstr "Font Settings"
+
+msgid "FONT_SETTINGS_DESC"
+msgstr "Select the default font family."
+
+msgid "FONT_FAMILY"
+msgstr "Font Family"
+
+msgid "FONT_SIZE"
+msgstr "Font Size"
+
+msgid "F_XSMALL"
+msgstr "Extra Small"
+
+msgid "F_SMALL"
+msgstr "Small"
+
+msgid "F_DEFAULT"
+msgstr "Default"
+
+msgid "F_LARGE"
+msgstr "Large"
+
+msgid "F_XLARGE"
+msgstr "Extra Large"
+
+msgid "PAGINATION"
+msgstr "Pagination"
+
+msgid "PAGINATION_DESC"
+msgstr "Displays pagination between the content type pages."
+
+msgid "PAGINATION_SHOW_RESULTS"
+msgstr "Show Results"
+
+msgid "PAGINATION_SHOW_COUNT"
+msgstr "Show Count"
+
+msgid "PAGINATION_SHOW_COUNT_DESC"
+msgstr "Displays the number of all available pages"
+
+msgid "PAGINATION_SHOW_RESULTS_DESC"
+msgstr "Displays the number of current and all available pages."
+
+msgid "PAGINATION_SIDE_PAGES"
+msgstr "Side Pages"
+
+msgid "PAGINATION_SIDE_PAGES_DESC"
+msgstr "Number of side pages to display next the current page number."
+
+msgid "WORDPRESS_COMMENTS"
+msgstr "Use Wordpress Comments"
+
+msgid "WORDPRESS_COMMENTS_DESC"
+msgstr "Disable this if you are using different commenting system like Disqus."
+
+msgid "CUSTOM_CSS"
+msgstr "Custom CSS"
+
+msgid "CUSTOM_CSS_DESC"
+msgstr "Your own CSS code to be added inline in the <head> section."
+
+msgid "TEXT"
+msgstr "Text"
+
+msgid "GIZMOS"
+msgstr "Gizmos"
+
+msgid "FEATURES"
+msgstr "Features"
+
+msgid "DATE"
+msgstr "Date"
+
+msgid "DATE_DESC"
+msgstr ""
+"Enable or disable the date feature as well as assign its default position."
+
+msgid "DATE_CLIENTSIDE"
+msgstr "Client-Side Date"
+
+msgid "FONT_SIZER"
+msgstr "Font-Sizer"
+
+msgid "FONT_SIZER_DESC"
+msgstr ""
+"Enable or disable the font size feature as well as assign its default "
+"position."
+
+msgid "BRANDING"
+msgstr "Branding"
+
+msgid "BRANDING_DESC"
+msgstr ""
+"Enable or disable logo based branding as well as assign its default position."
+
+msgid "COPYRIGHT"
+msgstr "Copyright"
+
+msgid "COPYRIGHT_DESC"
+msgstr ""
+"Enable or disable the copyright feature as well as assign its default "
+"position."
+
+msgid "SMARTLOAD"
+msgstr "SmartLoad"
+
+msgid "SMARTLOAD_DESC"
+msgstr "Enable or disable the image smartloading feature"
+
+msgid "COMPONENT_IGNORES"
+msgstr "Component Ignores"
+
+msgid "XPATH_IGNORES"
+msgstr "XPath Ignores"
+
+msgid "TOTOP"
+msgstr "To-Top Scroller"
+
+msgid "TOTOP_DESC"
+msgstr ""
+"Enable or disable the back to top feature as well as assign its default "
+"position."
+
+msgid "RESETSETTINGS"
+msgstr "Reset Settings"
+
+msgid "RESETSETTINGS_DESC"
+msgstr ""
+"Enable or disable the reset settings link as well as assign its default "
+"position."
+
+msgid "ANALYTICS"
+msgstr "Google Analytics"
+
+msgid "ANALYTICS_DESC"
+msgstr "Enable or disable Google analytics logic."
+
+msgid "ANALYTICS_ENABLE"
+msgstr "Enable"
+
+msgid "ANALYTICS_CODE"
+msgstr "UA Code"
+
+msgid "ANALYTICS_PLUGINS"
+msgstr "Analytics Plugins"
+
+msgid "ANALYTICS_PLUGINS_DESC"
+msgstr ""
+"Additional Analytics Plugins separated by space ie. displayfeatures linker"
+
+msgid "MENU"
+msgstr "Menu"
+
+msgid "MENU_CTRL"
+msgstr "Menu Control"
+
+msgid "MENU_CTRL_DESC"
+msgstr "Enable or disable the menu as well as select the menu type."
+
+msgid "FUSION"
+msgstr "Fusion-Menu"
+
+msgid "DROPDOWN"
+msgstr "Dropdown-Menu"
+
+msgid "SPLITMENU"
+msgstr "Split-Menu"
+
+msgid "MENU_SELECT"
+msgstr "Select a Menu"
+
+msgid "MENU_SELECT_DESC"
+msgstr "Select a menu group to display in the main menu."
+
+msgid "POSITION_DESC"
+msgstr "Select the location to display the main menu."
+
+msgid "ENABLE_JS"
+msgstr "Enable JavaScript"
+
+msgid "ENABLE_JS_DESC"
+msgstr "Enable or disable javascript effects for the menu."
+
+msgid "MENU_OPACITY"
+msgstr "Menu Opacity"
+
+msgid "MENU_EFFECT"
+msgstr "Menu Effect"
+
+msgid "MENU_EFFECT_DESC"
+msgstr "Select an available menu dropdown effect."
+
+msgid "SLIDE"
+msgstr "Slide"
+
+msgid "SLIDEFADE"
+msgstr "Slide + Fade"
+
+msgid "MENU_DELAY"
+msgstr "Menu Delay"
+
+msgid "MENU_DELAY_DESC"
+msgstr "Set the amount of delay for the menu dropdowns."
+
+msgid "MENU_ANIMATION"
+msgstr "Menu Animation"
+
+msgid "MENU_ANIMATION_DESC"
+msgstr "Select an available animation type for the menu dropdowns."
+
+msgid "MENU_DURATION"
+msgstr "Menu Duration"
+
+msgid "MENU_DURATION_DESC"
+msgstr "Set the duration of the menu dropdowns."
+
+msgid "CENTERED_DROPDOWN"
+msgstr "Centered Drop-downs"
+
+msgid "ENABLE_ID"
+msgstr "Enable ID"
+
+msgid "ENABLE_ID_DESC"
+msgstr "Enable or disable the default WordPress menu active ID."
+
+msgid "MAINMENU_POS"
+msgstr "Main Menu Position"
+
+msgid "MAINMENU_POS_DESC"
+msgstr "Select the position for the top level of the splitmenu."
+
+msgid "SUBMENU_POS"
+msgstr "Sub Menu Position"
+
+msgid "SUBMENU_POS_DESC"
+msgstr "Select the position for the submenu of the splitmenu."
+
+msgid "SUBMENU_TITLE"
+msgstr "Submenu Title"
+
+msgid "SUBMENU_TITLE_DESC"
+msgstr "Enable or disable the module title for the submenu widget."
+
+msgid "SUBMENU_CLASS_SFX"
+msgstr "Sub Menu Class Suffix"
+
+msgid "SUBMENU_CLASS_SFX_DESC"
+msgstr "Set a class suffix for the overall splitmenu."
+
+msgid "SUBMENUMODULE_CLASS_SFX"
+msgstr "Sub Menu Module Class Suffix"
+
+msgid "SUBMENUMODULE_CLASS_SFX_DESC"
+msgstr "Set a class suffix for the splitmenu submenu widget."
+
+msgid "RESPONSIVE_MENU"
+msgstr "Responsive Menu"
+
+msgid "RESPONSIVE_MENU_DESC"
+msgstr "Select the rendering styling of the menu when in mobile/tablet view."
+
+msgid "PANEL"
+msgstr "Panel"
+
+msgid "SELECTBOX"
+msgstr "Selectbox"
+
+msgid "LAYOUTS"
+msgstr "Layouts"
+
+msgid "FULLWIDTH_POS"
+msgstr "Full Width Positions"
+
+msgid "TOP_POS"
+msgstr "Top Positions"
+
+msgid "NAV_POS"
+msgstr "Navigation Positions"
+
+msgid "HEADER_POS"
+msgstr "Header Positions"
+
+msgid "SHOWCASE_POS"
+msgstr "Showcase Positions"
+
+msgid "UTILITY_POS"
+msgstr "Utility Positions"
+
+msgid "FEATURE_POS"
+msgstr "Feature Positions"
+
+msgid "MAINTOP_POS"
+msgstr "MainTop Positions"
+
+msgid "MAINBODY_POS"
+msgstr "MainBody Positions"
+
+msgid "MAINBOTTOM_POS"
+msgstr "MainBottom Positions"
+
+msgid "EXTENSION_POS"
+msgstr "Extension Positions"
+
+msgid "BOTTOM_POS"
+msgstr "Bottom Positions"
+
+msgid "FOOTER_POS"
+msgstr "Footer Positions"
+
+msgid "COPYRIGHT_POS"
+msgstr "Copyright Positions"
+
+msgid "FORCE_POS"
+msgstr "Force Positions"
+
+msgid "POS_COUNT"
+msgstr "Position Count"
+
+msgid "LAYOUT_POS_DESC"
+msgstr ""
+"Use the layout slider to select the desired column distribution used for "
+"each amount of active widgets in the indicated position."
+
+msgid "ADVANCED"
+msgstr "Advanced"
+
+msgid "LAYOUT_MODE"
+msgstr "Layout Mode"
+
+msgid "LAYOUT_MODE_DESC"
+msgstr ""
+"Select between responsive and fixed layout modes. Fixed layout modes do not "
+"have mobile support."
+
+msgid "RESPONSIVE"
+msgstr "Responsive"
+
+msgid "1200FIXED"
+msgstr "1200px Fixed"
+
+msgid "960FIXED"
+msgstr "960px Fixed"
+
+msgid "MAINTENANCE_MODE"
+msgstr "Maintenance Mode"
+
+msgid "MAINTENANCE_MODE_DESC"
+msgstr ""
+"Allows you to put your site in the Maintenance Mode and block non-members"
+
+msgid "MAINTENANCE_MODE_MESSAGE"
+msgstr "Message"
+
+msgid "LOAD_TRANSITION"
+msgstr "Load Transition"
+
+msgid "LOAD_TRANSITION_DESC"
+msgstr "Enable or disable the page loading transition animation effects."
+
+msgid "GANTRY_CACHE"
+msgstr "Gantry Cache"
+
+msgid "GANTRY_CACHE_DESC"
+msgstr "Enable or disable Gantry caching functionality."
+
+msgid "CACHE_TIME"
+msgstr "Cache Timeout"
+
+msgid "COMPONENT_ENABLED"
+msgstr "Display Content"
+
+msgid "COMPONENT_ENABLED_DESC"
+msgstr "Enable or disable the content output."
+
+msgid "MAINBODY_ENABLED"
+msgstr "Display Mainbody"
+
+msgid "MAINBODY_ENABLED_DESC"
+msgstr ""
+"Enable or disable the content output as well as sidebars and other mainbody "
+"widgets on the frontpage."
+
+msgid "RTL"
+msgstr "RTL Support"
+
+msgid "RTL_DESC"
+msgstr "Enable or disable support for RTL support."
+
+msgid "DISABLE_AUTO_PARAGRAPHS"
+msgstr "Disable Auto Paragraphs"
+
+msgid "DISABLE_AUTO_PARAGRAPHS_DESC"
+msgstr ""
+"Prevent WordPress from automatically wrapping the content into paragraph "
+"tags."
+
+msgid "DISABLE_AUTO_PARAGRAPHS_TYPE"
+msgstr "Content Type"
+
+msgid "DISABLE_AUTO_PARAGRAPHS_TYPE_DESC"
+msgstr "Choose the type of content to be excluded from the <p> wrapping field"
+
+msgid "DISABLE_TEXTURIZE"
+msgstr "Disable Texturize"
+
+msgid "DISABLE_TEXTURIZE_DESC"
+msgstr ""
+"Prevents WordPress from prettifying some characters like quotes (useful on "
+"pages with code)."
+
+msgid "PAGE_TEMPLATES"
+msgstr "Page Templates"
+
+msgid "PAGESUFFIX"
+msgstr "Page Suffix"
+
+msgid "PAGESUFFIX_DESC"
+msgstr ""
+"Enable or disable pagesuffix support appending a class to the body tag."
+
+msgid "CLASS"
+msgstr "Class"
+
+msgid "FEED_LINKS"
+msgstr "Feed Links"
+
+msgid "FEED_LINKS_DESC"
+msgstr "Enable the WordPress Feeds."
+
+msgid "CUSTOM_TITLE_TAG"
+msgstr "Custom Title Tag"
+
+msgid "CUSTOM_TITLE_TAG_DESC"
+msgstr ""
+"Customize the <title> tag using tokens found at the Gantry Framework site."
+
+msgid "TITLE_FORMAT"
+msgstr "Title Format"
+
+msgid "SHORTCODES_WIDGETS"
+msgstr "Shortcodes in Widgets"
+
+msgid "SHORTCODES_WIDGETS_DESC"
+msgstr "Allows WordPress to parse shortcodes placed in the widgets contents."
+
+msgid "ROKSTYLE"
+msgstr "RokStyle"
+
+msgid "ROKSTYLE_DESC"
+msgstr ""
+"Allows you to add CSS or JavaScript code directly from the post/page content."
+
+msgid "TYPOGRAPHY"
+msgstr "Template Typography"
+
+msgid "TYPOGRAPHY_DESC"
+msgstr "Enable or disable built in template typography sets."
+
+msgid "TYPOGRAPHY_STYLE"
+msgstr "Typography Styling"
+
+msgid "SELECTIVIZR"
+msgstr "Selectivizr"
+
+msgid "SELECTIVIZR_DESC"
+msgstr ""
+"Enable or disable Selectivizr support for IE8 providing support for "
+"additional CSS selectors for better compatibility."
+
+msgid "LESS_COMPILER"
+msgstr "Less Compiler"
+
+msgid "LESS_COMPILER_DESC"
+msgstr "Select the conditions and options for the built in LESS compiler."
+
+msgid "LESS_COMPRESSION"
+msgstr "CSS Compression"
+
+msgid "LESS_COMPRESSION_DESC"
+msgstr "Enable or disable whitespace compression for the resulting css file."
+
+msgid "LESS_COMPILEWAIT"
+msgstr "Compile Wait"
+
+msgid "LESS_COMPILEWAIT_DESC"
+msgstr ""
+"The maximum time one php thread will wait while another compiles a css file."
+
+msgid "LESS_CACHE_CLEARED"
+msgstr "Less compiled cache cleared."
+
+msgid "LESS_COMPILE_CLEAR"
+msgstr "Cache"
+
+msgid "LESS_COMPILE_CLEAR_TEXT"
+msgstr "Clear Cache"
+
+msgid "LESS_DEBUGHEADER"
+msgstr "Debug Header"
+
+msgid "LESS_DEBUGHEADER_DESC"
+msgstr ""
+"Show info about the less compile in the header of the resulting CSS file."
+
+msgid "ASSIGNMENTS"
+msgstr "Assignments"
+
+msgid "PRESET_TITLE"
+msgstr "Gantry Presets Saver"
+
+msgid "PRESET_SELECT"
+msgstr ""
+"Select the Presets you want to save and choose a new name for them. Hit skip "
+"on a Presets section if you do not want to save as new that specific Preset."
+
+msgid "PRESET_NAME"
+msgstr "Preset Name"
+
+msgid "KEY_NAME"
+msgstr "Key Name"
+
+msgid "PRESET_SKIP"
+msgstr "Skip"
+
+msgid "PRESET_NAMING"
+msgstr "Preset Naming for"
+
+msgid "SUCCESS_SAVE"
+msgstr "NEW PRESET SAVED WITH SUCCESS!"
+
+msgid "FAIL_SAVE"
+msgstr "SAVE FAILED"
+
+msgid "FAIL_MSG"
+msgstr ""
+"<p>It looks like the saving of the new Preset did not succeed. Make sure "
+"your template folder and custom/presets.ini at your template folder root "
+"have write permissions.</p><p>Once you think you have fixed the permission, "
+"hit the button Retry below.</p><p>If it still fails, please ask for support "
+"on RocketTheme forums</p>"
+
+msgid "RETRY"
+msgstr "Retry"
+
+msgid "SAVE"
+msgstr "Save"
+
+msgid "CANCEL"
+msgstr "Cancel"
+
+msgid "BLOG_VIEW"
+msgstr "Blog View"
+
+msgid "PAGE_VIEW"
+msgstr "Page View"
+
+msgid "POST_VIEW"
+msgstr "Post View"
+
+msgid "CATEGORY_VIEW"
+msgstr "Category View"
+
+msgid "ARCHIVE_VIEW"
+msgstr "Archive View"
+
+msgid "TAG_VIEW"
+msgstr "Tag View"
+
+msgid "SEARCH_VIEW"
+msgstr "Search View"
+
+msgid "SAVE_AS_COPY_SUFFIX"
+msgstr "Duplicate Override"
+
+# ------------------- GIZMOS ------------------- #
+#: gizmos/buddypress.php:110
+msgid "BuddyPress Blogs Component"
+msgstr ""
+
+#: gizmos/buddypress.php:111
+msgid "BuddyPress Activity Component"
+msgstr ""
+
+#: gizmos/buddypress.php:112
+msgid "BuddyPress Profile Component"
+msgstr ""
+
+#: gizmos/buddypress.php:113
+msgid "BuddyPress Messages Component"
+msgstr ""
+
+#: gizmos/buddypress.php:114
+msgid "BuddyPress Friends Component"
+msgstr ""
+
+#: gizmos/buddypress.php:115
+msgid "BuddyPress Members Component"
+msgstr ""
+
+#: gizmos/buddypress.php:116
+msgid "BuddyPress Groups Component"
+msgstr ""
+
+#: gizmos/buddypress.php:117
+msgid "BuddyPress Forums Component"
+msgstr ""
+
+#: gizmos/buddypress.php:118
+msgid "BuddyPress Settings Component"
+msgstr ""
+
+#: gizmos/buddypress.php:146
+msgid ""
+"The Gantry BuddyPress plugin is no longer required starting with Gantry "
+"Framework 4.0.8. You will need to deactivate and/or remove it for this new "
+"built-in support to work. This change affects BuddyPress 1.8+."
+msgstr ""
+
+# ------------------- WIDGETS ------------------- #
+#: widgets/breadcrumbs.php:38
+msgid "Home"
+msgstr ""
+
+#: widgets/archives.php:59
+msgid "Select Date"
+msgstr ""
+
+#: widgets/meta.php:63
+msgid "Logout"
+msgstr ""
+
+#: widgets/meta.php:67
+msgid "Login"
+msgstr ""
+
+#: widgets/meta.php:71
+msgid "Syndicate this site using RSS 2.0"
+msgstr ""
+
+#: widgets/meta.php:71
+msgid "Entries <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: widgets/meta.php:74
+msgid "The latest comments to all posts in RSS"
+msgstr ""
+
+#: widgets/meta.php:74
+msgid "Comments <abbr title=\"Really Simple Syndication\">RSS</abbr>"
+msgstr ""
+
+#: widgets/meta.php:77
+msgid ""
+"Powered by WordPress, state-of-the-art semantic personal publishing platform."
+msgstr ""
+
+#: widgets/loginform.php:50
+msgid "User Name"
+msgstr ""
+
+#: widgets/loginform.php:54
+msgid "Password"
+msgstr ""
+
+#: widgets/loginform.php:58
+msgid "Remember Me"
+msgstr ""
+
+#: widgets/loginform.php:61
+msgid "Log in"
+msgstr ""
+
+#: widgets/loginform.php:65
+msgid "Forgot your password?"
+msgstr ""
+
+#: widgets/loginform.php:69
+msgid "Register"
+msgstr ""

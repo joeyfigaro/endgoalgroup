@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: breadcrumbs.xml 60506 2014-01-31 17:46:00Z jakub $ -->
+<form>
+	<fieldset name="widget">
+		<field name="prefix" type="text" label="Prefix" class="widefat" size="30" default="You are here:" readonly="false" />
+	</fieldset>
+</form>

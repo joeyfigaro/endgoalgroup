@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: copyright.xml 59939 2013-09-27 11:44:21Z jakub $ -->
+<form>
+    <fieldset name="widget">
+        <field name="text" type="text" label="Text" description="Text" class="widefat" size="30" default="Designed by RocketTheme" readonly="false" />
+    </fieldset>
+</form>

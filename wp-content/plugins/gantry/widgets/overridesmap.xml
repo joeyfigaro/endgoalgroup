@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="widget">
+        <field name="title" type="text" label="Title" description="Title" class="widefat" size="30" readonly="false"
+               default="Applied Overrides"/>
+    </fieldset>
+</form>

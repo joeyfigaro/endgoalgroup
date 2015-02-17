@@ -1,0 +1,76 @@
+rule "Has taxonomy term" priority=1
+	context GantryPageCallFact $call, GantryFactTaxonomy $gof
+	if (is_single() || is_page()) && $gof->hasTerm($call->query)
+	then
+	    $action['output']->addOverride(new GantryOverrideItem($gof->override_id, 8, 0, $rule->name, $gof->getMatchData(), $gof->getNiceName()));
+	end
+
+rule "Has parent taxonomy term of" priority=1
+	context GantryPageCallFact $call, GantryFactTaxonomy $gof
+	if (is_single() || is_page()) && $gof->isParentOf($call->query)
+	then
+	    $action['output']->addOverride(new GantryOverrideItem($gof->override_id, 7, $gof->getDepthToChild($call->query), $rule->name, $gof->getMatchData(), $gof->getNiceName()));
+	end
+	
+rule "Is archive page" priority=1
+	context GantryPageCallFact $call, GantryFactArchive $gof
+	if (is_archive()) && $gof->matchesArchivePage($call->query)
+	then
+	    $action['output']->addOverride(new GantryOverrideItem($gof->override_id, 6, 0, $rule->name, $gof->getMatchData(), $gof->getNiceName()));
+	end
+
+rule "Has parent archive page of" priority=1
+	context GantryPageCallFact $call, GantryFactArchive $gof
+	if $gof->id != null && $gof->isParentOf($call->query)
+	then
+	    $action['output']->addOverride(new GantryOverrideItem($gof->override_id, 5, $gof->getDepthToChild($call->query), $rule->name, $gof->getMatchData(), $gof->getNiceName()));
+	end
+
+rule "Is of archive type" priority=1
+	context GantryPageCallFact $call, GantryFactArchive $gof
+	if (is_archive()) && $gof->id == null && $gof->matchesArchiveType($call->query)
+	then
+	    $action['output']->addOverride(new GantryOverrideItem($gof->override_id, 4, 0, $rule->name, $gof->getMatchData(), $gof->getNiceName()));
+	end
+	
+rule "Is item " priority=1
+	context GantryPageCallFact $call, GantryFactPost_Type $gof
+	if (is_single() || is_page()) && $gof->matchesPostType($call->query) && $gof->id == $call->query->post->ID
+	then
+	    $action['output']->addOverride(new GantryOverrideItem($gof->override_id, 6, 0, $rule->name, $gof->getMatchData(), $gof->getNiceName()));
+	end
+
+rule "Has a parent item of" priority=1
+	context GantryPageCallFact $call, GantryFactPost_Type $gof
+	if $gof->id != null && $gof->isParentOf($call->query)
+	then
+	    $action['output']->addOverride(new GantryOverrideItem($gof->override_id, 5, $gof->getDepthToChild($call->query),$rule->name, $gof->getMatchData(), $gof->getNiceName()));
+	end
+
+rule "Is of type" priority=1
+	context GantryPageCallFact $call, GantryFactPost_Type $gof
+	if $gof->id == null && $gof->matchesPostType($call->query)
+	then
+	    $action['output']->addOverride(new GantryOverrideItem($gof->override_id, 4, 0,$rule->name, $gof->getMatchData(), $gof->getNiceName()));
+	end
+
+rule "Is menu item " priority=1
+	context GantryPageCallFact $call, GantryFactMenu $gof
+	if $gof->isMenuItem($call->query)
+	then
+	    $action['output']->addOverride(new GantryOverrideItem($gof->override_id, 3, 0, $rule->name, $gof->getMatchData(), $gof->getNiceName()));
+	end
+
+rule "Has a parent menu item of" priority=1
+	context GantryPageCallFact $call, GantryFactMenu $gof
+	if $gof->isParentOf($call->query)
+	then
+	    $action['output']->addOverride(new GantryOverrideItem($gof->override_id, 2, $gof->getDepthToChild($call->query), $rule->name, $gof->getMatchData(), $gof->getNiceName()));
+	end
+
+rule "Is template page type" priority=1
+	context GantryPageCallFact $call, GantryFactTemplatePage $gof
+	if $gof->matchesCallPageType($call->query)
+	then
+	    $action['output']->addOverride(new GantryOverrideItem($gof->override_id, 1, 0, $rule->name, $gof->getMatchData(), $gof->type));
+	end

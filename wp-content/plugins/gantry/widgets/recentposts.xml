@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: recentposts.xml 58623 2012-12-15 22:01:32Z btowles $ -->
+<form>
+    <fieldset name="widget">
+        <field name="title" type="text" label="Title" description="Title" class="widefat" size="30"
+               default="Latest Posts" readonly="false"/>
+        <field name="number" type="text" label="Number of Posts to Show:" description="Number of posts to show"
+               class="widefat" size="30" default="10" readonly="false"/>
+        <field name="menu_class" type="text" label="List Class" description="List Class" class="widefat" size="30"
+               default="" readonly="false"/>
+        <field name="cat" type="text" label="Category" description="Set or exclude the categories using theirs ID"
+               class="widefat" size="30" default="" readonly="false"/>
+    </fieldset>
+</form>

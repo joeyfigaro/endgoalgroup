@@ -1,0 +1,17 @@
+/**
+ * @version $Id: gantrydivider.css 60286 2013-12-09 23:32:26Z jakub $
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2014 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+
+.gantry-divider {background:none;border: 0px solid #f00 !important;}
+.gantry-divider .widget-top {height:17px;background: transparent url(../admin/widgets/images/divider-bar.png) 0 50% no-repeat !important;}
+.gantry-divider .widget-top {border: 0px solid #f00 !important; box-shadow: none;}
+.gantry-divider .widget-top:hover {box-shadow: none !important;}
+.gantry-divider .widget-top h4, .gantry-divider .widget-top .widget-title-action, .gantry-divider .widget-inside {display:none !important;}
+.gantry-divider .widget-title {height:17px;padding:0;background:url(../admin/widgets/images/divider-grab.png) 50% 50% no-repeat;}
+
+/** WordPress < 3.8 Compatibility **/
+
+.gantry-pre-mp6 .gantry-divider .widget-top {height:17px;background: transparent url(../admin/widgets/images/divider-bar-old.png) 0 50% no-repeat !important;}

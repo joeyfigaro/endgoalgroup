@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: menu.xml 58623 2012-12-15 22:01:32Z btowles $ -->
+<form>
+    <fieldset name="widget">
+        <field name="nav_menu" type="navmenulist" label="Menu:" description="The Wordpress menu to display"
+               class="widefat" readonly="false"/>
+        <field name="theme" type="themelist" label="Theme:" description="The theme to use for the menu" class="widefat"
+               readonly="false"/>
+        <field name="limit_levels" type="list" label="Limit Levels:" description="The theme to use for the menu"
+               readonly="false">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>
+        <field name="startLevel" type="integer" label="Start Level:" description="The depth in the menu to start"
+               first="0" last="20" step="1" readonly="false"/>
+        <field name="endLevel" type="integer" label="End Level:" description="The depth in the menu to end" first="0"
+               last="20" step="1" readonly="false"/>
+        <field name="showAllChildren" type="list" label="Show All Children:"
+               description="Show all children of all parents" readonly="false">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>
+        <field name="maxdepth" type="integer" label="Maximum Depth:" description="The maximum depth to show" first="0"
+               last="20" step="1" readonly="false"/>
+    </fieldset>
+</form>

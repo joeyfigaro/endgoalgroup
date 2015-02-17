@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+
+    <fieldset name="widget">
+        <field name="clientside" type="checkbox" value="1" label="Client Side Date"/>
+        <field
+            name="format"
+            type="dateformats"
+            label="Date Format"
+            description="Date Format"
+            default="%A, %B %d, %Y"
+            readonly="false">
+            <option value="%A, %B %d, %Y"/>
+            <option value="%B %d, %Y"/>
+            <option value="%d %h, %Y"/>
+            <option value="%d %h, %y"/>
+            <option value="%a, %h %d, %Y"/>
+            <option value="%a, %h %d, %y"/>
+            <option value="%A, %B %d, %Y - %H:%M"/>
+        </field>
+    </fieldset>
+</form>

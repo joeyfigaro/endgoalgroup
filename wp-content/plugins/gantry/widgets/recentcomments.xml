@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: recentcomments.xml 58623 2012-12-15 22:01:32Z btowles $ -->
+<form>
+    <fieldset name="widget">
+        <field name="title" type="text" label="Title" description="Title" class="widefat" size="30"
+               default="Latest Comments" readonly="false"/>
+        <field name="number" type="text" label="Number of Comments to Show:" description="Number of comments to show"
+               class="widefat" size="30" default="5" readonly="false"/>
+        <field name="word_limit" type="text" label="Word Limit" description="Word Limit" class="widefat" size="30"
+               default="8" readonly="false"/>
+        <field name="menu_class" type="text" label="List Class" description="List Class" class="widefat" size="30"
+               default="comments" readonly="false"/>
+        <field name="link_class" type="text" label="Link Class" description="Link Class" class="widefat" size="30"
+               default="comment_link" readonly="false"/>
+    </fieldset>
+</form>

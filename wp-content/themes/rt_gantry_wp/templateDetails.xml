@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<theme>
+	<name>rt_gantry_wp</name>
+	<version>4.1.2</version>
+	<creationDate>May 18, 2014</creationDate>
+	<author>RocketTheme, LLC</author>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>${copyright}</copyright>
+	<license>${licence}</license>
+	<description>${project.descritpion}</description>
+	<legacycss>false</legacycss>
+	<gridcss>false</gridcss>
+	<positions>
+		<position id="drawer" name="Drawer" max_positions="1">Drawer</position>
+		<position id="top" name="Top" max_positions="6">Top</position>
+		<position id="header" name="Header" max_positions="6">Header</position>
+		<position id="showcase" name="Showcase" max_positions="6">Showcase</position>
+		<position id="feature" name="Feature" max_positions="6">Feature</position>
+		<position id="utility" name="Utility" max_positions="6">Utility</position>
+		<position id="maintop" name="Main Top" max_positions="6">Main Top</position>
+		<position id="fullwidth" name="Full Width" max_positions="1">Full Width</position>
+		<position id="breadcrumb" name="Breadcrumb" max_positions="1">Breadcrumbs</position>
+		<position id="sidebar" name="Sidebar" max_positions="3">Sidebar</position>
+		<position id="content-top" name="Content Top" max_positions="3">Content Top</position>
+		<position id="content-bottom" name="Content Bottom" max_positions="3">Content Bottom</position>
+		<position id="mainbottom" name="Main Bottom" max_positions="6">Main Bottom</position>
+		<position id="extension" name="Extension" max_positions="6">Extension</position>
+		<position id="bottom" name="Bottom" max_positions="6">Bottom</position>
+		<position id="footer" name="Footer" max_positions="6">Footer</position>
+		<position id="copyright" name="Copyright" max_positions="6">Copyright</position>
+		<position id="analytics" name="Analytics" max_positions="1">Analytics</position>
+		<position id="debug" name="Debug" max_positions="1">Debug</position>
+	</positions>
+	<widget_styles>
+		<stylegroup name="box-variations" label="Box Variation">
+			<style name="box1" label="box1" />
+			<style name="box2" label="box2" />
+			<style name="box3" label="box3" />
+		</stylegroup>
+		<stylegroup name="title-variations" label="Title Variation">
+			<style name="title1" label="title1" />
+			<style name="title2" label="title2" />
+			<style name="title3" label="title3" />
+			<style name="title4" label="title4" />
+		</stylegroup>
+	</widget_styles>
+	<widget_chromes>
+		<chrome name="basic" label="Basic" />
+		<chrome name="menu" label="Menu" />
+		<chrome name="standard" label="Standard" />
+	</widget_chromes>
+	<config>
+		<fields name="template-options">
+			<fieldset name="toolbar-panel" label="Toolbar">
+				<field name="presets" type="preset" mode="scroller" default="preset1" setbyurl="true" setinoverride="false" panel_position="left" show_label="false" />
+			</fieldset>
+			<fieldset name="overview" label="OVERVIEW">
+				<field name="gantry" type="gantry" value="" panel_position="hiddens" />
+				<field name="template_full_name" type="hidden" default="Gantry" />
+				<field name="template_author" type="hidden" default="RocketTheme" />
+				<field name="overviewtips" type="tips" tab="overview" panel_position="right" show_label="false" />
+				<field name="grid_system" type="hidden" default="12" />
+				<field name="template_prefix" type="hidden" default="gantry-" />
+				<field name="cookie_time" type="hidden" default="31536000" />
+				<field name="name" type="hidden" default="Preset1" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" />
+				<field name="copy_lang_files_if_diff" type="hidden" default="1" />
+                <field name="dropdown_widget_variations" type="hidden" default="1" />
+				<field name="custom_widget_variations" type="hidden" default="1" />
+
+				<field name="overview" type="html" panel_position="left" show_label="false">
+					<html>
+						<![CDATA[
+						<div class="template-preview">
+							<img src="{template_preview}" style="max-width: 300px;" class="template-preview" alt="{template_name}" />
+							<h2>Key Features</h2>
+							<ul>
+								<li>Responsive Design supporting Phone, Tablets and Desktops</li>
+								<li>LESS CSS auto-compilation</li>
+								<li>Flexible widgets for template customization</li>
+								<li>Full extensible framework architecture</li>
+								<li>XML driven and with overrides for unprecedented levels of customization</li>
+								<li>Per override level of control over any configuration option with inheritance</li>
+							</ul>
+						</div>
+						<div class="template-description">
+							<h1>{template_name} <span class="g4-version">v{template_version}</span></h1>
+							<h2>Gantry Framework Base Theme</h2>
+
+							<p>The Gantry Framework base theme is a clean modern responsive design that is a great place to start when building your custom Gantry powered theme.</p>
+
+							<h2>What is the Gantry Framework?</h2>
+
+							<p>Gantry is a sophisticated framework with the sole intention of being the best platform to build a solid theme with.
+								Gantry takes all the lessons learned during the development of many RocketTheme Joomla templates and WordPress
+								Themes and distills that knowledge into a single super-flexible framework that is easy to configure, simple to
+								extend, and powerful enough to handle anything we want to throw at it.</p>
+
+							<p>Get more help and find out more at <a href="http://www.gantry-framework.org">http://www.gantry-framework.org</a></p>
+						</div>
+						]]>
+					</html>
+				</field>
+			</fieldset>
+			<fieldset name="content" label="CONTENT">
+				<fields type="innertabs" show_label="false">
+					<fields name="blog" type="grouped" label="BLOG_VIEW" show_label="false">
+						<field name="cat" type="text" default="" class="text-regular" label="BLOG_CATEGORY" description="BLOG_CATEGORY_DESC" />
+						<fields name="post" type="chain" label="POSTS_DISPLAY" description="POSTS_DISPLAY_DESC">
+							<field name="lead-items" type="text" class="text-short" default="1" label="LEADING_POSTS" description="LEADING_POSTS_DESC" />
+							<field name="intro-items" type="text" class="text-short" default="3" label="INTRO_POSTS" description="INTRO_POSTS_DESC" />
+							<field name="columns" type="text" class="text-short" default="3" label="COLUMNS" description="COLUMNS_DESC" />
+						</fields>
+						<fields name="query" type="chain" label="QUERY" description="QUERY_DESC">
+							<field name="type" type="selectbox" default="post" label="QUERY_TYPE" description="QUERY_TYPE_DESC">
+								<option value="any">ANY</option>
+								<option value="attachment">ATTACHMENT</option>
+								<option value="page">PAGE</option>
+								<option value="post">POST</option>
+								<option value="revision">REVISION</option>
+							</field>
+							<field name="order" type="selectbox" default="date" label="ORDER" description="ORDER_DESC">
+								<option value="author">AUTHOR</option>
+								<option value="comment_count">COMMENT_COUNT</option>
+								<option value="date">DATE</option>
+								<option value="title">TITLE</option>
+								<option value="modified">MODIFIED</option>
+								<option value="name">NAME</option>
+								<option value="none">None</option>
+								<option value="id">ID</option>
+								<option value="parent">PARENT</option>
+								<option value="rand">RANDOM</option>
+							</field>
+							<field name="custom" type="text" default="" class="text-long" label="CUSTOM_QUERY" description="CUSTOM_QUERY_DESC" />
+						</fields>
+						<field name="content" type="selectbox" default="content" label="CONTENT_TYPE" description="CONTENT_TYPE_DESC">
+							<option value="content">CONTENT</option>
+							<option value="excerpt">EXCERPT</option>
+						</field>
+						<fields name="page-heading" type="chain" label="HEADING" description="HEADING_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="text" type="text" default="" label="CUSTOM_HEADING" description="CUSTOM_HEADING_DESC" class="text-regular" />
+						</fields>
+						<fields name="post-title" type="chain" label="SHOW_POST_TITLES" description="SHOW_POST_TITLES_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC" />
+						</fields>
+						<fields name="meta-author" type="chain" label="AUTHOR_META" description="AUTHOR_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="1" label="LINK" description="LINK_DESC" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-date" type="chain" label="DATE_META" description="DATE_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-modified" type="chain" label="MODIFIED_DATE_META" description="MODIFIED_DATE_META_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="Last Updated on" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-comments" type="chain" label="COMMENTS_META_DATA" description="COMMENTS_META_DATA_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC" />
+						</fields>
+						<fields name="meta-category" type="chain" label="SHOW_POST_CATEGORY" description="SHOW_POST_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-category-parent" type="chain" label="SHOW_POST_PARENT_CATEGORY" description="SHOW_POST_PARENT_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="readmore" type="chain" label="READ_MORE" description="READ_MORE_DESC">
+							<field name="text" type="text" default="Read more ..." class="text-medium" label="LABEL" />
+							<field name="show" type="selectbox" default="auto" label="DISPLAY" description="DISPLAY_DESC">
+								<option value="auto">AUTO</option>
+								<option value="always">ALWAYS</option>
+								<option value="never">NEVER</option>
+							</field>
+						</fields>
+					</fields>
+
+					<fields name="page" type="grouped" label="PAGE_VIEW">
+						<fields name="page-heading" type="chain" label="HEADING" description="HEADING_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="text" type="text" default="" label="CUSTOM_HEADING" description="CUSTOM_HEADING_DESC" class="text-regular" />
+						</fields>
+						<fields name="title" type="chain" label="SHOW_TITLE" description="SHOW_TITLE_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<fields name="meta-author" type="chain" label="AUTHOR_META" description="AUTHOR_META_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="1" label="LINK" description="LINK_DESC" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-date" type="chain" label="DATE_META" description="DATE_META_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-modified" type="chain" label="MODIFIED_DATE_META" description="MODIFIED_DATE_META_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="Last Updated on" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-comments" type="chain" label="COMMENTS_META_DATA" description="COMMENTS_META_DATA_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<field name="featured-image" type="toggle" default="0" label="SHOW_FEATURED_IMAGE" description="SHOW_FEATURED_IMAGE_DESC" />
+						<fields name="comments-form" type="chain" label="SHOW_COMMENTS" description="SHOW_COMMENTS_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="html-tags" type="toggle" default="1" label="HTML_TAGS" description="HTML_TAGS_DESC"/>
+						</fields>
+					</fields>
+
+					<fields name="single" type="grouped" label="POST_VIEW">
+						<fields name="page-heading" type="chain" label="HEADING" description="HEADING_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="text" type="text" default="" label="CUSTOM_HEADING" description="CUSTOM_HEADING_DESC" class="text-regular" />
+						</fields>
+						<fields name="title" type="chain" label="SHOW_TITLE" description="SHOW_TITLE_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<fields name="meta-author" type="chain" label="AUTHOR_META" description="AUTHOR_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="1" label="LINK" description="LINK_DESC" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-date" type="chain" label="DATE_META" description="DATE_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-modified" type="chain" label="MODIFIED_DATE_META" description="MODIFIED_DATE_META_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="Last Updated on" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-comments" type="chain" label="COMMENTS_META_DATA" description="COMMENTS_META_DATA_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<fields name="meta-category" type="chain" label="SHOW_POST_CATEGORY" description="SHOW_POST_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-category-parent" type="chain" label="SHOW_POST_PARENT_CATEGORY" description="SHOW_POST_PARENT_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<field name="featured-image" type="toggle" default="0" label="SHOW_FEATURED_IMAGE" description="SHOW_FEATURED_IMAGE_DESC"/>
+						<field name="tags" type="toggle" default="1" label="SHOW_TAGS" description="SHOW_TAGS_DESC"/>
+						<field name="footer" type="toggle" default="1" label="SHOW_FOOTER_NOTE"  description="SHOW_FOOTER_NOTE_DESC"/>
+						<fields name="comments-form" type="chain" label="SHOW_COMMENTS" description="SHOW_COMMENTS_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="html-tags" type="toggle" default="1" label="HTML_TAGS" description="HTML_TAGS_DESC"/>
+						</fields>
+					</fields>
+
+					<fields name="category" type="grouped" label="CATEGORY_VIEW">
+						<field name="count" type="text" class="text-short" default="5" label="POST_COUNT" description="POST_COUNT_DESC"/>
+						<field name="content" type="selectbox" default="content" label="CONTENT_TYPE" description="CONTENT_TYPE_DESC">
+							<option value="content">CONTENT</option>
+							<option value="excerpt">EXCERPT</option>
+						</field>
+						<fields name="page-heading" type="chain" label="HEADING" description="HEADING_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="text" type="text" default="" label="CUSTOM_HEADING" description="CUSTOM_HEADING_DESC" class="text-regular" />
+						</fields>
+						<fields name="post-title" type="chain" label="SHOW_POST_TITLES" description="SHOW_POST_TITLES_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<fields name="meta-author" type="chain" label="AUTHOR_META" description="AUTHOR_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="1" label="LINK" description="LINK_DESC" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-date" type="chain" label="DATE_META" description="DATE_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-modified" type="chain" label="MODIFIED_DATE_META" description="MODIFIED_DATE_META_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="Last Updated on" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-comments" type="chain" label="COMMENTS_META_DATA" description="COMMENTS_META_DATA_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<fields name="meta-category" type="chain" label="SHOW_POST_CATEGORY" description="SHOW_POST_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-category-parent" type="chain" label="SHOW_POST_PARENT_CATEGORY" description="SHOW_POST_PARENT_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="readmore" type="chain" label="READ_MORE" description="READ_MORE_DESC">
+							<field name="text" type="text" default="Read more ..." class="text-medium" label="LABEL"/>
+							<field name="show" type="selectbox" default="auto" label="DISPLAY" description="DISPLAY_DESC">
+								<option value="auto">AUTO</option>
+								<option value="always">ALWAYS</option>
+								<option value="never">NEVER</option>
+							</field>
+						</fields>
+					</fields>
+
+					<fields name="archive" type="grouped" label="ARCHIVE_VIEW">
+						<field name="count" type="text" class="text-short" default="5" label="POST_COUNT" description="POST_COUNT_DESC"/>
+						<field name="content" type="selectbox" default="content" label="CONTENT_TYPE" description="CONTENT_TYPE_DESC">
+							<option value="content">CONTENT</option>
+							<option value="excerpt">EXCERPT</option>
+						</field>
+						<fields name="page-heading" type="chain" label="HEADING" description="HEADING_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="text" type="text" default="" label="CUSTOM_HEADING" description="CUSTOM_HEADING_DESC" class="text-regular" />
+						</fields>
+						<fields name="post-title" type="chain" label="SHOW_POST_TITLES" description="SHOW_POST_TITLES_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<fields name="meta-author" type="chain" label="AUTHOR_META" description="AUTHOR_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="1" label="LINK" description="LINK_DESC" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-date" type="chain" label="DATE_META" description="DATE_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-modified" type="chain" label="MODIFIED_DATE_META" description="MODIFIED_DATE_META_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="Last Updated on" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-comments" type="chain" label="COMMENTS_META_DATA" description="COMMENTS_META_DATA_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<fields name="meta-category" type="chain" label="SHOW_POST_CATEGORY" description="SHOW_POST_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-category-parent" type="chain" label="SHOW_POST_PARENT_CATEGORY" description="SHOW_POST_PARENT_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="readmore" type="chain" label="READ_MORE" description="READ_MORE_DESC">
+							<field name="text" type="text" default="Read more ..." class="text-medium" label="LABEL"/>
+							<field name="show" type="selectbox" default="auto" label="DISPLAY" description="DISPLAY_DESC">
+								<option value="auto">AUTO</option>
+								<option value="always">ALWAYS</option>
+								<option value="never">NEVER</option>
+							</field>
+						</fields>
+					</fields>
+
+					<fields name="tag" type="grouped" label="TAG_VIEW">
+						<field name="count" type="text" class="text-short" default="5" label="POST_COUNT" description="POST_COUNT_DESC"/>
+						<field name="content" type="selectbox" default="content" label="CONTENT_TYPE" description="CONTENT_TYPE_DESC">
+							<option value="content">CONTENT</option>
+							<option value="excerpt">EXCERPT</option>
+						</field>
+						<fields name="page-heading" type="chain" label="HEADING" description="HEADING_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="text" type="text" default="" label="CUSTOM_HEADING" description="CUSTOM_HEADING_DESC" class="text-regular" />
+						</fields>
+						<fields name="post-title" type="chain" label="SHOW_POST_TITLES" description="SHOW_POST_TITLES_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<fields name="meta-author" type="chain" label="AUTHOR_META" description="AUTHOR_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="1" label="LINK" description="LINK_DESC" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-date" type="chain" label="DATE_META" description="DATE_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-modified" type="chain" label="MODIFIED_DATE_META" description="MODIFIED_DATE_META_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="Last Updated on" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-comments" type="chain" label="COMMENTS_META_DATA" description="COMMENTS_META_DATA_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<fields name="meta-category" type="chain" label="SHOW_POST_CATEGORY" description="SHOW_POST_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-category-parent" type="chain" label="SHOW_POST_PARENT_CATEGORY" description="SHOW_POST_PARENT_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="readmore" type="chain" label="READ_MORE" description="READ_MORE_DESC">
+							<field name="text" type="text" default="Read more ..." class="text-medium" label="LABEL"/>
+							<field name="show" type="selectbox" default="auto" label="DISPLAY" description="DISPLAY_DESC">
+								<option value="auto">AUTO</option>
+								<option value="always">ALWAYS</option>
+								<option value="never">NEVER</option>
+							</field>
+						</fields>
+					</fields>
+
+					<fields name="search" type="grouped" label="SEARCH_VIEW">
+						<field name="count" type="text" class="text-short" default="5" label="POST_COUNT" description="POST_COUNT_DESC"/>
+						<field name="content" type="selectbox" default="content" label="CONTENT_TYPE" description="CONTENT_TYPE_DESC">
+							<option value="content">CONTENT</option>
+							<option value="excerpt">EXCERPT</option>
+						</field>
+						<fields name="page-heading" type="chain" label="HEADING" description="HEADING_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="text" type="text" default="" label="CUSTOM_HEADING" description="CUSTOM_HEADING_DESC" class="text-regular" />
+						</fields>
+						<fields name="post-title" type="chain" label="SHOW_POST_TITLES" description="SHOW_POST_TITLES_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<fields name="meta-author" type="chain" label="AUTHOR_META" description="AUTHOR_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="1" label="LINK" description="LINK_DESC" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-date" type="chain" label="DATE_META" description="DATE_META_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-modified" type="chain" label="MODIFIED_DATE_META" description="MODIFIED_DATE_META_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="prefix" type="text" default="Last Updated on" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+							<field name="format" type="text" default="l, d F Y H:i" label="FORMAT" description="FORMAT_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-comments" type="chain" label="COMMENTS_META_DATA" description="COMMENTS_META_DATA_DESC">
+							<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+						</fields>
+						<fields name="meta-category" type="chain" label="SHOW_POST_CATEGORY" description="SHOW_POST_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="meta-category-parent" type="chain" label="SHOW_POST_PARENT_CATEGORY" description="SHOW_POST_PARENT_CATEGORY_DESC">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="link" type="toggle" default="0" label="LINK" description="LINK_DESC"/>
+							<field name="prefix" type="text" default="" label="PREFIX" description="PREFIX_DESC" class="text-medium" />
+						</fields>
+						<fields name="readmore" type="chain" label="READ_MORE" description="READ_MORE_DESC">
+							<field name="text" type="text" default="Read more ..." class="text-medium" label="LABEL"/>
+							<field name="show" type="selectbox" default="auto" label="DISPLAY" description="DISPLAY_DESC">
+								<option value="auto">AUTO</option>
+								<option value="always">ALWAYS</option>
+								<option value="never">NEVER</option>
+							</field>
+						</fields>
+					</fields>
+				</fields>
+			</fieldset>
+			<fieldset name="style" label="STYLE">
+				<fields name="logo" type="selectedset" label="LOGO" description="LOGO_DESC">
+					<field name="type" type="selectbox" selector="true" default="gantry" label="TYPE" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+					<fields type="set" name="gantry" label="Gantry Template">
+					</fields>
+					<fields type="set" name="custom" label="CUSTOM">
+						<field name="image" type="imagepicker" default="" label="LOGO_PICKER" description="LOGO_PICKER_DESC" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" />
+					</fields>
+				</fields>
+
+				<field name="headerstyle" type="selectbox" default="dark" label="HEADER_STYLE" description="HEADER_STYLE_DESC" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+					<option value="dark">DARK</option>
+					<option value="light">LIGHT</option>
+				</field>
+
+				<field name="linkcolor" type="colorchooser" default="#2698de" label="LINK_COLOR" description="LINK_COLOR_DESC" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+
+				<field name="responsive-menu" type="selectbox" default="panel" label="RESPONSIVE_MENU" description="RESPONSIVE_MENU_DESC" setinoverride="false">
+					<option value="panel">PANEL</option>
+					<option value="selectbox">SELECTBOX</option>
+				</field>
+				
+				<field name="thumbnails-enabled" type="hidden" default="1" />
+
+				<fields name="thumb" type="chain" label="FEATURED_IMAGE_SIZE" description="FEATURED_IMAGE_SIZE_DESC" setinoverride="false">
+					<field name="width" type="text" class="text-short" default="142" label="WIDTH" setinoverride="false" />
+					<field name="height" type="text" class="text-short" default="88" label="HEIGHT" setinoverride="false" />
+					<field name="position" type="selectbox" default="left" label="POSITION" setinoverride="false">
+						<option value="left">LEFT</option>
+						<option value="right">RIGHT</option>
+						<option value="">None</option>
+					</field>
+				</fields>
+
+				<fields name="font" type="chain" label="FONT_SETTINGS" description="FONT_SETTINGS_DESC">
+					 <field name="family" type="fonts" default="s:helvetica" primary="helvetica" label="FONT_FAMILY" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+						<option value="geneva">Geneva</option>
+						<option value="georgia">Georgia</option>
+						<option value="helvetica">Helvetica</option>
+						<option value="helveticaneue">Helvetica Neue</option>
+						<option value="lucida">Lucida</option>
+						<option value="optima">Optima</option>
+						<option value="palatino">Palatino</option>
+						<option value="trebuchet">Trebuchet</option>
+					</field>
+					<field name="size" type="hidden" default="default" setbyurl="true"/>
+					<field name="size-is" type="selectbox" default="default" label="FONT_SIZE" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+						<option value="xsmall">F_XSMALL</option>
+						 <option value="small">F_SMALL</option>
+						 <option value="default">F_DEFAULT</option>
+						 <option value="large">F_LARGE</option>
+						 <option value="xlarge">F_XLARGE</option>
+					</field>
+				</fields>
+
+				<fields name="pagination" type="chain" label="PAGINATION" description="PAGINATION_DESC" setinoverride="true">
+					<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+					<field name="show-results" type="toggle" default="1" label="PAGINATION_SHOW_RESULTS" description="PAGINATION_SHOW_RESULTS_DESC" enabler="true" />
+					<field name="count" type="text" default="8" label="PAGINATION_SIDE_PAGES" description="PAGINATION_SIDE_PAGES_DESC" class="text-short"/>
+				</fields>
+				
+				<field name="wordpress-comments" type="toggle" default="1" label="WORDPRESS_COMMENTS" description="WORDPRESS_COMMENTS_DESC"/>
+				
+				<field name="customcss" default="" type="textarea" label="CUSTOM_CSS" description="CUSTOM_CSS_DESC" class="text-textarea" />
+			</fieldset>
+			<fieldset name="gizmos" label="GIZMOS">
+				<field name="rtl-priority" type="hidden" default="7"/>
+				<field name="childcss-priority" type="hidden" default="100"/>
+				<field name="thumbnails-priority" type="hidden" default="1"/>
+
+				<field name="styledeclaration-enabled" type="hidden" default="1" />
+
+				<fields name="pagesuffix" type="chain" label="PAGESUFFIX" description="PAGESUFFIX_DESC">
+					<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+					<field name="class" type="text" default="" class="text-long" label="CLASS"/>
+					<field name="priority" type="hidden" default="2"/>
+				</fields>
+
+				<fields name="feedlinks" type="chain" label="FEED_LINKS" description="FEED_LINKS_DESC">
+					<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+					<field name="priority" type="hidden" default="1"/>
+				</fields>
+					 
+				<fields name="title" type="chain" label="CUSTOM_TITLE_TAG" description="CUSTOM_TITLE_TAG_DESC">
+					<field name="format" type="text" default="" label="TITLE_FORMAT" class="text-long"/>
+					<field name="priority" type="hidden" default="5"/>
+				</fields>
+
+				<fields name="widgetshortcodes" type="chain" label="SHORTCODES_WIDGETS" description="SHORTCODES_WIDGETS_DESC">
+					<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+					<field name="priority" type="hidden" default="2"/>
+				</fields>
+				
+				<fields name="rokstyle" type="chain" label="ROKSTYLE" description="ROKSTYLE_DESC">
+					<field name="enabled" type="toggle" default="1" label="ENABLED" enabler="true" />
+					<field name="priority" type="hidden" default="5"/>
+				</fields>
+
+				<fields name="analytics" type="chain" label="ANALYTICS" description="ANALYTICS_DESC">
+					<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+					<field name="code" type="text" default="" label="ANALYTICS_CODE" class="text-regular" />
+                    <field name="plugins" type="text" default="" label="ANALYTICS_PLUGINS" description="ANALYTICS_PLUGINS_DESC" class="text-regular" />
+					<field name="priority" type="hidden" default="3"/>
+				</fields>
+
+			</fieldset>
+			<fieldset name="layouts" label="LAYOUTS">
+				<fields name="top" type="position" label="TOP_POS" description="LAYOUT_POS_DESC">
+					<field name="layout" type="positions" default="3,3,3,3" label="">
+						<schemas>1,2,3,4,5,6</schemas>
+						<words>2,3,4,5,6,7,8,9,10</words>
+					</field>
+					<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+					<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+				</fields>
+
+				<fields name="header" type="position" label="HEADER_POS" description="LAYOUT_POS_DESC">
+					<field name="layout" type="positions" default="3,3,3,3" label="">
+						<schemas>1,2,3,4,5,6</schemas>
+						<words>2,3,4,5,6,7,8,9,10</words>
+					</field>
+					<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+					<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+				</fields>
+
+				<fields name="showcase" type="position" label="SHOWCASE_POS" description="LAYOUT_POS_DESC">
+					<field name="layout" type="positions" default="3,3,3,3" label="">
+						<schemas>1,2,3,4,5,6</schemas>
+						<words>2,3,4,5,6,7,8,9,10</words>
+					</field>
+					<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+					<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+				</fields>
+
+				<fields name="feature" type="position" label="FEATURE_POS" description="LAYOUT_POS_DESC">
+					<field name="layout" type="positions" default="3,3,3,3" label="">
+						<schemas>1,2,3,4,5,6</schemas>
+						<words>2,3,4,5,6,7,8,9,10</words>
+					</field>
+					<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+					<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+				</fields>
+				
+				<fields name="utility" type="position" label="UTILITY_POS" description="LAYOUT_POS_DESC">
+					<field name="layout" type="positions" default="3,3,3,3" label="">
+						<schemas>1,2,3,4,5,6</schemas>
+						<words>2,3,4,5,6,7,8,9,10</words>
+					</field>
+					<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+					<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+				</fields>
+
+				<fields name="maintop" type="position" label="MAINTOP_POS" description="LAYOUT_POS_DESC">
+					<field name="layout" type="positions" default="3,3,3,3" label="">
+						<schemas>1,2,3,4,5,6</schemas>
+						<words>2,3,4,5,6,7,8,9,10</words>
+					</field>
+					<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+					<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+				</fields>
+
+				<field name="mainbodyPosition" type="positions" default="6,3,3" label="MAINBODY_POS" description="LAYOUT_POS_DESC">
+					<schemas>1,2,3,4</schemas>
+					<words>sa,sb,sc,mb</words>
+					<type>custom</type>
+				</field>
+
+				<fields name="mainbottom" type="position" label="MAINBOTTOM_POS" description="LAYOUT_POS_DESC">
+					<field name="layout" type="positions" default="3,3,3,3" label="">
+						<schemas>1,2,3,4,5,6</schemas>
+						<words>2,3,4,5,6,7,8,9,10</words>
+					</field>
+					<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+					<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+				</fields>
+
+				<fields name="extension" type="position" label="EXTENSION_POS" description="LAYOUT_POS_DESC">
+					<field name="layout" type="positions" default="3,3,3,3" label="">
+						<schemas>1,2,3,4,5,6</schemas>
+						<words>2,3,4,5,6,7,8,9,10</words>
+					</field>
+					<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+					<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+				</fields>
+
+				<fields name="bottom" type="position" label="BOTTOM_POS" description="LAYOUT_POS_DESC">
+					<field name="layout" type="positions" default="3,3,3,3" label="">
+						<schemas>1,2,3,4,5,6</schemas>
+						<words>2,3,4,5,6,7,8,9,10</words>
+					</field>
+					<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+					<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+				</fields>
+
+				<fields name="footer" type="position" label="FOOTER_POS" description="LAYOUT_POS_DESC">
+					<field name="layout" type="positions" default="3,3,3,3" label="">
+						<schemas>1,2,3,4,5,6</schemas>
+						<words>2,3,4,5,6,7,8,9,10</words>
+					</field>
+					<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+					<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+				</fields>
+				
+				<fields name="copyright" type="position" label="COPYRIGHT_POS" description="LAYOUT_POS_DESC">
+					<field name="layout" type="positions" default="3,3,3,3" label="">
+						<schemas>1,2,3,4,5,6</schemas>
+						<words>2,3,4,5,6,7,8,9,10</words>
+					</field>
+					<field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+					<field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+				</fields>
+			</fieldset>
+			<fieldset name="advanced" label="ADVANCED">
+				<field name="loadposition-enabled" type="hidden" default="1" />
+
+				<field name="layout-mode" type="selectbox" default="responsive" label="LAYOUT_MODE" description="LAYOUT_MODE_DESC" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+					<option value="responsive">RESPONSIVE</option>
+					<option value="1200fixed">1200FIXED</option>
+					<option value="960fixed">960FIXED</option>
+				</field>
+
+				<fields name="maintenancemode" type="chain" label="MAINTENANCE_MODE" description="MAINTENANCE_MODE_DESC" setinoverride="false">
+					<field name="enabled" type="toggle" default="0" label="ENABLED" setinoverride="false" />
+					<field name="message" type="text" default="Site is currently in the maintenance mode. Please try again later." label="MAINTENANCE_MODE_MESSAGE" class="text-verylong" setinoverride="false" />
+				</fields>
+
+				<field name="loadtransition" type="toggle" default="0" label="LOAD_TRANSITION" description="LOAD_TRANSITION_DESC" />
+
+				<field name="component-enabled" type="toggle" default="1" label="COMPONENT_ENABLED" description="COMPONENT_ENABLED_DESC" />
+				
+				<field name="mainbody-enabled" type="toggle" default="1" label="MAINBODY_ENABLED" description="MAINBODY_ENABLED_DESC" />
+				
+				<field name="rtl-enabled" type="toggle" default="1" label="RTL" description="RTL_DESC" setinoverride="false" />
+								
+				<fields name="autoparagraphs" type="chain" label="DISABLE_AUTO_PARAGRAPHS" description="DISABLE_AUTO_PARAGRAPHS_DESC">
+					<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+					<field name="type" type="selectbox" default="content" label="DISABLE_AUTO_PARAGRAPHS_TYPE" description="DISABLE_AUTO_PARAGRAPHS_TYPE_DESC">
+						<option value="content">CONTENT</option>
+						<option value="excerpt">EXCERPT</option>
+						<option value="both">BOTH</option>
+					</field>
+					<field name="priority" type="hidden" default="5" />
+				</fields>
+				
+				<field name="texturize-enabled" type="toggle" default="0" label="DISABLE_TEXTURIZE" description="DISABLE_TEXTURIZE_DESC" />
+
+				<field name="selectivizr-enabled" type="toggle" default="0" label="SELECTIVIZR" description="SELECTIVIZR_DESC" />
+
+				<fields name="less" type="chain" label="LESS_COMPILER" description="LESS_COMPILER_DESC" setinoverride="false">
+					<field name="compression" type="toggle" default="1" label="LESS_COMPRESSION" description="LESS_COMPRESSION_DESC" />
+					<field name="compilewait" type="textplus" default="2" append="sec" label="LESS_COMPILEWAIT" description="LESS_COMPILEWAIT_DESC" class="text-short" />
+					<field name="debugheader" type="toggle" default="0" label="LESS_DEBUGHEADER" description="LESS_DEBUGHEADER_DESC" />
+					<field name="clear" type="ajaxbutton" text="LESS_COMPILE_CLEAR_TEXT" model="lesscompiler" action="clear" label="LESS_COMPILE_CLEAR" setinoverride="false" />
+				</fields>
+			</fieldset>
+			<fieldset name="templates" label="PAGE_TEMPLATES">
+				<fields type="innertabs" show_label="false">
+					<fields name="contact" type="grouped" label="CONTACT_FORM" show_label="false">
+						<field name="email" type="text" class="text-long" default="" label="CONTACT_EMAIL" description="CONTACT_EMAIL_DESC" />
+						<fields name="recaptcha" type="chain" label="RECAPTCHA" description="RECAPTCHA_DESC" setinoverride="false">
+							<field name="enabled" type="toggle" default="0" label="ENABLED" enabler="true" />
+							<field name="publickey" type="text" default="" label="PUBLIC_KEY" class="text-long" />
+							<field name="privatekey" type="text" default="" label="PRIVATE_KEY" class="text-long" />
+						</fields>
+					</fields>
+				</fields>
+			</fieldset>
+		</fields>
+	</config>
+</theme>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="widget">
+        <field
+            name="text"
+            type="text"
+            label="Reset Settings Text"
+            description="Reset Settings Text"
+            class="widefat"
+            size="30"
+            default="Reset Settings"
+            readonly="false"/>
+    </fieldset>
+</form>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: fontsizer.xml 58623 2012-12-15 22:01:32Z btowles $ -->
+<form>
+    <fieldset name="widget">
+        <field
+            name="text"
+            type="text"
+            label="Font Sizer Text"
+            description="Font Sizer Text"
+            class="widefat"
+            size="30"
+            default="Font Size"
+            readonly="false"/>
+    </fieldset>
+</form>

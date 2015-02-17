@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="widget">
+        <field name="autosize" type="checkbox" default="0" value="1" label="Auto Size"/>
+        <field name="perstyle" type="checkbox" default="1" value="1" label="Per Style Logo"/>
+        <field name="css" type="hidden" default="body #rt-logo"/>
+    </fieldset>
+</form>
