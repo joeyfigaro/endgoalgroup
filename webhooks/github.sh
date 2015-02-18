@@ -1,3 +1,4 @@
 #!/bin/bash
-cd /var/www/wordpress/wp-content/themes/endgoalgroup/
+rm -rf /var/www/wordpress/wp-content/themes/endgoalgroup
+cd /var/www/wordpress/wp-content/themes/
 git pull
