@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<form>
-    <fieldset name="widget">
-        <field name="text" type="text" label="To Top Text" description="To Top Text" class="widefat" size="30" default="Scroll To Top" readonly="false" />
-    </fieldset>
-</form>
