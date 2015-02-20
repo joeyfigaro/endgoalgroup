@@ -1,10 +1,10 @@
 /*
 Theme Name:
-Theme URI: http://cacpro.com
+Theme URI: http://endgoalgroup.com
 Description:
 Version: 1.0
-Author: CROSSANDCROWN
-Author URI: http://cacpro.com
+Author: Shovel & Sandbox
+Author URI: http://shovelandsandbox.com
 */
 
 
@@ -14,9 +14,9 @@ Author URI: http://cacpro.com
 body {
     color: #000000;
 	font-size: 62.5%;
-    text-align: center;    
+    text-align: center;
 }
- 
+
 /* container  */
 .container {
     width: 960px;
@@ -24,7 +24,7 @@ body {
     text-align: left;
     position: relative;
 }
- 
+
 /* for clearing any floats <br class="clear" /> or <div class="clear"></div> */
 .clear {
     clear:both;
@@ -84,9 +84,9 @@ a:hover {
 -------------------------------------------------------------- */
 
 #header {
-	
+
 }
- 
+
 
 /* MENU
 -------------------------------------------------------------- */
@@ -108,15 +108,15 @@ a:hover {
 
 /* wordpress specific menu stylings */
 #menu li.current_page_item a {
-	
+
 }
 
 #menu li.first a {
-	
+
 }
 
 #menu li.last a {
-	
+
 }
 
 
@@ -130,7 +130,7 @@ a:hover {
 .one-third {
 	float:right;
 }
- 
+
 
 /* CONTENT
 -------------------------------------------------------------- */
@@ -183,10 +183,10 @@ input[type=submit] {
 -------------------------------------------------------------- */
 
 #footer {
-	
+
 }
 
 #site-credits {
-	
+
 }
 
