@@ -1,0 +1,40 @@
+box: wercker/nodejs
+# Build definition
+build:
+  steps:
+    - script:
+        name: echo nodejs information
+        code: export
+deploy:
+  steps:
+    - script:
+        code: export
+    - add-to-known_hosts:
+        hostname: $SSH_HOST
+        fingerprint: $SSH_FINGERPRINT
+        local: true
+    - mktemp:
+        envvar: PRIVATEKEY_PATH
+    - create-file:
+        name: write key
+        filename: $PRIVATEKEY_PATH
+        content: $WERCKER_PRIVATE
+        overwrite: true
+    - script:
+        name: fetch latest
+        code: |
+          ssh -i $PRIVATEKEY_PATH endgoalshell@$SSH_HOST "cd /var/www/app && git add --all . && git stash && git fetch -p && git checkout $GIT_BRANCH && git pull"
+    - script:
+        name: npm install
+        code: |
+          ssh -i $PRIVATEKEY_PATH app@$SSH_HOST "cd /var/www/app && npm install"
+    - script:
+        name: start application
+        code: |
+          ssh -i $PRIVATEKEY_PATH endgoalshell@$SSH_HOST pm2 stop $PM2_ID
+          ssh -i $PRIVATEKEY_PATH endgoalshell@$SSH_HOST "cd /var/www/app && NODE_ENV="$ENVIRONMENT" PORT=$APP_PORT pm2 start server.js --name=$PM2_ID"
+  after-steps:
+    - wantedly/pretty-slack-notify:
+        webhook_url: $SLACK_URL
+        channel: wercker
+        username: wercker

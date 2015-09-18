@@ -1,0 +1,1 @@
+{"version":3,"sources":["routes/pages.js"],"names":[],"mappings":";;;;;;qBAEe,UAAS,GAAG,EAAE,EAE5B","file":"routes/pages.js","sourcesContent":["\n\nexport default function(app) {\n\n}\n"],"sourceRoot":"/source/"}
