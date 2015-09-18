@@ -1,4 +1,4 @@
-box: wercker/nodejs
+box: nodesource/latest
 # Build definition
 build:
   steps:
