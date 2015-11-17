@@ -1,0 +1,37 @@
+.useful-resources {
+  .splash {
+    background: url('/images/splashes/struggle.jpg') center -230px no-repeat;
+    background-size: 100%;
+  }
+
+  .left > h1 {
+    margin-top: 0;
+  }
+
+  .right {
+    // background: $blue;
+    // color: #fefefe;
+  }
+
+  article {
+    margin: 0 0 3rem;
+
+    header a {
+      text-decoration: none;
+    }
+
+    h1 { // title
+      font-size: 1.3rem;
+      margin: 0 0 0.2rem;
+    }
+
+    h2 { // author
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    em { // domain
+      font-size: 0.9rem;
+    }
+  }
+}

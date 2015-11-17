@@ -1,0 +1,15 @@
+{
+  "Keys": {
+
+  },
+  "Database": {
+    "app": {
+      "uri": "mongodb://endgoalgroup:2adeVaVu@ds051933.mongolab.com:51933/endgoalgroup-dev",
+      "name": "endgoalgroup-dev",
+      "host": "ds051933.mongolab.com",
+      "port": "51933",
+      "user": "endgoalgroup",
+      "password": "2adeVaVu"
+    }
+  }
+}

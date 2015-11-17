@@ -1,0 +1,399 @@
+$dark-blue: #0f233b;
+$blue: #41A2CD;
+$slate: #3d4144;
+$green: #5ef577;
+$orange: #ff6347;
+$purple: #ac5ef5;
+$yellow: #f3d71d;
+
+@import 'concise/concise';
+@import 'font-awesome/font-awesome';
+
+@import 'pages/training', 'pages/contact', 'pages/useful-resources', 'pages/testimonials', 'pages/who-we-are', 'pages/what-we-do', 'pages/train-it';
+@import 'forms';
+
+i {
+  @extend .fa;
+}
+
+html {
+  background: #ddd;
+}
+
+body {
+  position: relative;
+  width: 80%;
+  max-width: 1480px;
+  min-width: 1024px;
+  font-size: 18px;
+  line-height: 1.618;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #2a2a2a;
+  margin: 0 auto;
+}
+
+a, a:visited, a:active {
+  color: darken(#62b3e7, 10%);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+main {
+  overflow: hidden;
+  padding: 2rem;
+
+  .left, .right {
+    float: left;
+  }
+
+  .left {
+    width: 70%;
+    padding-right: 2rem;
+  }
+
+  .right {
+    width: 30%;
+    padding-left: 2rem;
+  }
+}
+
+.wrapper {
+  @include row;
+}
+
+header.primary {
+  @include row;
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1480px;
+  background: $dark-blue;
+  margin: 0;
+  overflow: hidden;
+
+  &.headhesive {
+    display: block;
+  }
+
+  &.headhesive--stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  a {
+    display: inline-block;
+    color: #fefefe;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 1rem;
+
+    &.logo {
+      background: url('/images/logos/color-smallest.png') no-repeat 20px center;
+      padding: 21px 35px 23px 87px;
+    }
+
+    &:active, &:visited {
+      color: #fefefe;
+    }
+
+    &:hover {
+      color: #fefefe;
+      text-decoration: underline;
+    }
+  }
+
+  a.contact {
+    background: darken($dark-blue, 6%);
+    padding: 1.5rem;
+
+    &:hover {
+      color: #fefefe;
+      background: $orange;
+    }
+  }
+}
+
+a.logo {
+  @include column(4, 12, true);
+  text-align: left;
+  font-size: 1.5rem;
+  color: #fefefe;
+  font-weight: 600;
+  position: relative;
+
+  &:hover {
+    color: #fefefe;
+  }
+
+  i {
+    font-size: 4rem;
+    color: $orange;
+    position: absolute;
+    right: -20px;
+    top: -4px;
+    display: none; // temp
+  }
+}
+
+nav {
+  @include column(8, 12);
+  text-align: right;
+
+  a {
+    border-right: lighten($dark-blue, 7%) solid 1px;
+    padding: 1.5rem 1.25rem;
+  }
+
+  a.agile-resources, a.contact {
+    border: none;
+  }
+
+  a.current {
+    color: $blue !important;
+  }
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.splash {
+  min-height: 400px;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1.3rem;
+    background: #fefefe;
+    box-shadow: rgba(#333, 0.2) 1px -2px 8px;
+    border-top-right-radius: 8px;
+    padding: 1rem 2rem;
+  }
+}
+
+.splash-message {
+  @include row;
+  position: relative;
+  text-align: center;
+  background: url('/images/splashes/collage-small.jpg') no-repeat $blue;
+  background-size: 100%;
+  clear: both;
+  padding: 14rem 4rem;
+
+  h1, h2 {
+    color: #fefefe;
+    text-shadow: darken(#333, 9%) 0 3px 3px;
+    margin: 0;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-weight: 200;
+    font-size: 1.8rem;
+  }
+
+  img {
+    margin: 0 0 2rem;
+  }
+}
+
+.calls-to-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba($dark-blue, 0.4);
+  padding: 2rem;
+}
+
+.calls-to-action a {
+  @extend .btn;
+  @extend .btn-large;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  padding: 1rem 2rem !important;
+  position: relative;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+
+  &.training {
+    text-shadow: darken($orange, 6%) 0 1px 0;
+    box-shadow: darken($orange, 6%) 0 2px 0;
+    background: $orange;
+    border-top: lighten($orange, 7%) solid 1px;
+    margin-right: 0.65rem;
+
+    &:focus {
+      top: 2px;
+      border-top-color: darken($orange, 9%);
+      box-shadow: none;
+    }
+
+    &:hover {
+      background: darken($orange, 1%);
+    }
+  }
+
+  &.hire-us {
+    text-shadow: darken($blue, 15%) 0 1px 0;
+    box-shadow: darken($blue, 15%) 0 2px 0;
+    background: darken($blue, 10%);
+    border-top: lighten($blue, 5%) solid 1px;
+
+    &:focus {
+      top: 2px;
+      border-top-color: darken($blue, 16%);
+      box-shadow: none;
+    }
+
+    &:hover {
+      background: darken($blue, 11%);
+    }
+  }
+}
+
+.our-approach {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+
+  @media all and (max-width: 1077px) {
+    width: 90%;
+    padding: 3rem 2rem;
+  }
+
+  @media all and (max-width: 859px) {
+    width: 70%;
+    padding: 3rem 0;
+  }
+
+  .row {
+    @include row;
+  }
+
+  .strategy, .transformation, .training, .coaching {
+    @include column(1, 2);
+    padding: 0 1rem;
+
+    @media all and (max-width: 859px) {
+      margin: 0 0 3rem;
+    }
+
+    i {
+      display: block;
+      text-align: center;
+      color: lighten($slate, 25%);
+      font-size: 2rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .title {
+      @extend .h3;
+      color: lighten($slate, 5%);
+      text-align: center;
+      font-family: 'Bree Serif', Georgia, serif;
+    }
+  }
+}
+
+footer {
+  color: #fefefe;
+  background: $dark-blue;
+  border-top: lighten($dark-blue, 5%) 1px solid;
+
+  .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 0 3rem;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin: 0 0 0.5rem;
+  }
+
+  a, a:visited, a:active {
+    text-decoration: none;
+    color: #fefefe;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .links {
+    overflow: hidden;
+    width: 400px;
+    float: left;
+  }
+
+  .sitemap, .utilities {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+
+  .get-in-touch {
+    width: 500px;
+    float: right;
+    text-align: right;
+
+    .title {
+      text-align: left;
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .icon {
+      display: none;
+      line-height: 63px;
+      font-size: 3rem;
+      // float: right !important;
+    }
+  }
+
+  .telephone {
+    text-align: right;
+    // float: right !important;
+
+    .phone-number {
+      letter-spacing: 1px;
+      display: block;
+    }
+  }
+
+  form {
+    float: left;
+    width: 50%;
+  }
+}
+
+
+// high-res
+@media all and (min-width: 1920px) {
+  .our-approach {
+    padding: 3rem 0;
+  }
+  .our-approach, .wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}

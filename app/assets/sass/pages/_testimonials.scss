@@ -1,0 +1,62 @@
+.testimonials {
+  main {
+    text-align: left;
+  }
+
+  main > h1 {
+    text-align: left;
+  }
+
+  .splash {
+    background: url('/images/splashes/cheers.jpg') center -210px no-repeat;
+    background-size: 100%;
+  }
+}
+
+.gridsizer {
+  width: 33%;
+}
+
+.testimonials-wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.testimonial {
+  display: inline-block;
+  vertical-align: top;
+  color: #333;
+  width: 33%;
+  position: relative;
+  margin-bottom: 4px;
+
+  .content {
+    text-align: left;
+    padding: 2rem;
+  }
+
+  &:before {
+    position: absolute;
+    top: 13px;
+    left: 2rem;
+    content: '\201C';
+    color: #ccc;
+    line-height: 1;
+    font-size: 550%;
+    font-family: Times New Roman;
+  }
+
+  p {
+    margin-top: 0;
+    text-indent: 12%;
+  }
+
+  .title {
+    font-size: 0.8rem;
+  }
+
+  .person {
+    display: block;
+    font-weight: 600;
+  }
+}

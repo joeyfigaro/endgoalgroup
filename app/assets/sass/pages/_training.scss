@@ -1,0 +1,119 @@
+.training-and-events {
+  .splash {
+    background: url('/images/splashes/leadership.jpg') center -390px no-repeat;
+    background-size: 100%;
+  }
+}
+
+.courses {
+  width: 100%;
+  float: left;
+  margin: 0 -330px 20px 0;
+  padding: 2rem;
+
+  .wrapper {
+    width: auto;
+    margin: 0 330px 0 0;
+  }
+
+  ul {
+    margin: 0 0 2rem;
+    padding: 0;
+  }
+
+  .title {
+    font-weight: 600;
+  }
+
+  li.title {
+    margin: 0 0 1rem;
+  }
+}
+
+.course-list {
+  float: left;
+  width: 330px;
+  padding: 1rem;
+
+  p {
+    margin: 0 0 0.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    margin: 0 0 1rem;
+  }
+}
+
+.course {
+  margin: 0 0 3rem;
+
+  a[name] {
+    display: block;
+    height: 1px;
+  }
+
+  .left, .right, .one, .two, .three {
+    width: auto;
+    float: left;
+    padding: 1rem 2rem;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    .title {
+      display: block;
+      width: 70px;
+      text-align: center;
+      color: darken($blue, 3%);
+      font-weight: 800;
+      border: $blue solid 1px;
+      border-radius: 6px;
+      margin: 0 0 0.5rem;
+      padding: 0.2rem 0.4rem;
+    }
+  }
+
+  .right + *, .three + * {
+    clear: both;
+  }
+
+  h1, h2 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    background: none;
+  }
+
+  .cost-and-duration {
+    overflow: hidden;
+    margin: 0 0 1rem;
+  }
+
+  .cost, .duration {
+    float: left;
+    margin: 0 1rem 0 0;
+  }
+
+  ul ul {
+    padding: 0 1rem 1rem;
+  }
+}
