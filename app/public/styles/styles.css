@@ -3544,7 +3544,19 @@ img.full-width {
 
 .train-it .splash {
   background: url("/images/splashes/trainit.jpg") center -230px no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  position: relative; }
+
+.train-it .calls-to-action {
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  width: 220px;
+  height: 52px;
+  background: none;
+  padding: 0; }
 
 form label {
   cursor: pointer;

@@ -22,7 +22,6 @@ Current features:
 * Use BSON data types in documents
 
 Planned features:
-
 * Support for replica set connections
 * Web-based command-line interface
 * Site authentication
@@ -47,7 +46,7 @@ Screenshots
 
 <img src="http://i.imgur.com/DOi3b.png" title="Viewing documents in a collection" />
 
-Click here for more screenshots: 
+Click here for more screenshots:
 [http://imgur.com/a/OTZHe](http://imgur.com/a/OTZHe)
 
 These screenshots are from version 0.11.0.
