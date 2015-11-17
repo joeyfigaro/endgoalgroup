@@ -22,6 +22,7 @@ Current features:
 * Use BSON data types in documents
 
 Planned features:
+
 * Support for replica set connections
 * Web-based command-line interface
 * Site authentication
